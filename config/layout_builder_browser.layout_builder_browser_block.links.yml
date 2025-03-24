@@ -1,0 +1,11 @@
+uuid: da8ebd28-588a-4c06-b67c-e9105a38e348
+langcode: en
+status: true
+dependencies: {  }
+id: links
+block_id: 'inline_block:links'
+category: zoocha_components
+label: Links
+image_path: ''
+image_alt: ''
+weight: null

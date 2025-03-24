@@ -1,0 +1,38 @@
+uuid: 28816d80-a7fa-4f6c-bb21-5066c6dbc402
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_item.field_link
+    - field.field.paragraph.link_item.field_media
+    - paragraphs.paragraphs_type.link_item
+  module:
+    - linkit
+id: paragraph.link_item.default
+targetEntityType: paragraph
+bundle: link_item
+mode: default
+content:
+  field_link:
+    type: linkit
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+      linkit_profile: default
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

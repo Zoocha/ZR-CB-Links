@@ -1,0 +1,61 @@
+uuid: dede7452-050d-4a91-907e-cc6004ec6741
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.links
+    - field.storage.block_content.field_link_item
+    - paragraphs.paragraphs_type.link_item
+  module:
+    - entity_reference_revisions
+id: block_content.links.field_link_item
+field_name: field_link_item
+entity_type: block_content
+bundle: links
+label: 'Link Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      link_item: link_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 12
+        enabled: false
+      accordion_item:
+        weight: 13
+        enabled: false
+      call_to_action:
+        weight: 14
+        enabled: false
+      card_item:
+        weight: 16
+        enabled: false
+      cards:
+        weight: 15
+        enabled: false
+      copy:
+        weight: 17
+        enabled: false
+      embedded_view:
+        weight: 18
+        enabled: false
+      hero:
+        weight: 19
+        enabled: false
+      link_item:
+        weight: 20
+        enabled: true
+      media_content:
+        weight: 21
+        enabled: false
+      webform:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,36 @@
+uuid: 6292da09-52be-43d5-903c-a981aa31184b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_item.field_link
+    - field.field.paragraph.link_item.field_media
+    - paragraphs.paragraphs_type.link_item
+  module:
+    - linkit
+    - media_library
+id: paragraph.link_item.default
+targetEntityType: paragraph
+bundle: link_item
+mode: default
+content:
+  field_link:
+    type: linkit
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      linkit_profile: default
+      linkit_auto_link_text: false
+    third_party_settings: {  }
+  field_media:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
